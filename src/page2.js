@@ -78,8 +78,8 @@ function onSelChange(evt) {
 function applyLangToMarkup(lang) {
   langElems.forEach(langEl => {
     langEl.textContent = langData[langEl.dataset.lang][lang];
+    langEl.setAttribute('id', '');
   });
 
-  htmlEl.setAttribute('lang', lang);
   backdropEl.classList.add('is-hidden');
 }

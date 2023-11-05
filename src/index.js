@@ -80,6 +80,7 @@ function applyLangToMarkup(lang) {
     if (langData[langEl.dataset.lang][lang]) {
       langEl.textContent = langData[langEl.dataset.lang][lang];
     }
+    langEl.setAttribute('id', '');
   });
 
   htmlEl.setAttribute('lang', lang);
